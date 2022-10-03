@@ -1,0 +1,30 @@
+{
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "path-autocomplete.pathMappings": {
+    "@": "${folder}/src/**/*",
+  },
+  "editor.tabSize": 2,
+  "path-autocomplete.enableFolderTrailingSlash": false,
+  "path-autocomplete.extensionOnImport": false,
+  "path-autocomplete.excludedItems": {
+    "**": {
+      "when": "**/*.html",
+      "context": "(src|href)=.*",
+    },
+    "**/*.+(ts|tsx)": {
+      "when": "**/*.+(ts|tsx)",
+      "context": "import|require",
+    }
+  },
+  // "path-autocomplete.ignoredFilesPattern": "**/*.{scss,css}",
+  // "javascript.suggest.paths": false,
+  // "typescript.suggest.paths": false,
+}
